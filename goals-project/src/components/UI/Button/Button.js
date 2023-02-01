@@ -1,6 +1,6 @@
 // import styled from 'styled-components';
-import React from "react";
-import styles from './Button.module.css';
+import React from 'react';
+import classes from './Button.module.css';
 
 // tagged template literal from styled components
 // const Button = styled.button`
@@ -29,9 +29,13 @@ import styles from './Button.module.css';
 //   }
 // `;
 
-const Button = props => {
+const Button = (props) => {
   return (
-    <button type={props.type} className={styles.button} onClick={props.onClick}>
+    <button
+      type={props.type}
+      className={classes.button}
+      onClick={props.onClick}
+    >
       {props.children}
     </button>
   );
